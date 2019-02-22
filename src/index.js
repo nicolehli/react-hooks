@@ -18,9 +18,9 @@ const App = () => {
 
   let content;
   if(errorMessage) {
-    content = <div>Error: {this.state.errorMessage}</div>;
+    content = <div>Error: {errorMessage}</div>;
   } else if (lat) {
-    content = <SeasonDisplay lat={this.state.lat} />
+    content = <SeasonDisplay lat={lat} />
   } else { 
     content = <Spinner message="Please accept location request" />
   }
